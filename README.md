@@ -34,24 +34,36 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    _Semantic_ --> _meaning_, so semantic HTML is HTML wherein the tags match up with their content, and the structure of the HTML reflects the structure of the site being built. _Semantic HTML_ is written to be human-readable, so other coders can right away get a sense of what's going on.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+    1) Block elements take up the full width of their containers (if width is not defined), whereas inline elements are only as wide (and tall) as their contents (plus padding, border, and margins).
+
+    2) Block elements force line breaks; inline elements don't.
 
 3. What are the 4 areas of the box model?
 
+    Content, padding, border, margins.
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+    The cross-axis.
+
 5. Explain why git is valuable to a team of developers.
+
+    Provides powerful version-control tools, allows for easy collaboration, avoids mixups if two or more devs are working on the same files, etc.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
