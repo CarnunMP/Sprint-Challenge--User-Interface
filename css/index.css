@@ -168,6 +168,11 @@ header nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* Stretch: */
+    animation-name: jiggle;
+    animation-duration: 0.15s;
+    animation-iteration-count: infinite;
 }
 
 .bottom-content {
@@ -287,4 +292,29 @@ footer nav a {
     height: 160px;
     justify-content: center;
     padding: 20px 0px 0px 3px;
+}
+
+/* Stretch: */
+@keyframes jiggle {
+    0% {width: 12.5%;}
+    25% {width: 13%;}
+    50% {width: 12.5%;}
+    75% {width: 12%;}
+    100% {width: 12.5%;}
+}
+
+@keyframes dance {
+    0% {left: -5px; top: -5px}
+    25% {left: 5px; top: -5px}
+    50% {left: 5px; top: 5px}
+    75% {left: -5px; top: 5px}
+    100% {left: -5px; top: -5px}
+}
+
+#logo {
+    animation-name: dance;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    position: relative;
 }
