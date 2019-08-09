@@ -207,3 +207,37 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* about.html-specific styles: */
+.top-content.about-page {
+    /* background: red; */
+    height: 140px;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 0px 0px 0px 20px;
+}
+
+.middle-content.about-page {
+    background: lightpink;
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+}
+
+.middle-content.about-page .top-row {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.middle-content.about-page .top-row .left-box {
+    border-bottom: 1px dashed black;
+}
+.middle-content.about-page .top-row .right-box {
+    border-bottom: 1px dashed black;
+}
+
+.middle-content.about-page .bottom-row {
+    display: flex;
+    /* flex-direction: row; */
+}
