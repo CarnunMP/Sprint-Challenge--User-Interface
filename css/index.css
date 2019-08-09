@@ -71,12 +71,38 @@ p {
     margin: 0 auto;
 }
 
+/* Header ballpark: */
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    /* background: red; */
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+/* --- */
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+
+    /* Fine-tuning: */
+    align-items: center;
+    height: 185px;
+    padding: 20px 0px 0px 0px;
 }
 
 .top-content .text-container {
@@ -101,6 +127,38 @@ p {
     justify-content: space-evenly;
 }
 
+/* Box colouring: */
+.middle-content .boxes .box:nth-child(1) {
+    background: teal;
+}
+.middle-content .boxes .box:nth-child(2) {
+    background: gold;
+}
+.middle-content .boxes .box:nth-child(3) {
+    background: cadetblue;
+}
+.middle-content .boxes .box:nth-child(4) {
+    background: coral;
+}
+.middle-content .boxes .box:nth-child(5) {
+    background: crimson;
+}
+.middle-content .boxes .box:nth-child(6) {
+    background: forestgreen;
+}
+.middle-content .boxes .box:nth-child(7) {
+    background: darkorchid;
+}
+.middle-content .boxes .box:nth-child(8) {
+    background: hotpink;
+}
+.middle-content .boxes .box:nth-child(9) {
+    background: indigo;
+}
+.middle-content .boxes .box:nth-child(10) {
+    background: dodgerblue;
+}
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -110,6 +168,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* Stretch: */
+    animation-name: jiggle;
+    animation-duration: 0.15s;
+    animation-iteration-count: infinite;
 }
 
 .bottom-content {
@@ -143,4 +206,115 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* about.html-specific styles: */
+.top-content.about-page {
+    /* background: red; */
+    height: 140px;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 0px 0px 0px 20px;
+}
+
+.middle-content.about-page {
+    /* background: lightpink; */
+    height: 920px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    justify-content: space-around;
+}
+
+.middle-content.about-page .top-row {
+    height: 450px;
+    display: flex;
+    padding: 0px 0px 5px 0px;
+}
+
+.middle-content.about-page .bottom-row {
+    display: flex;
+    /* flex-grow: 1; */
+    padding: 40px 0px 0px 0px;
+}
+
+#row {
+    justify-content: space-around;
+}
+
+#middle-box {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 0px 0px;
+}
+
+.middle-content.about-page .top-row .left-box {
+    border-bottom: 1px dashed black;
+}
+.middle-content.about-page .top-row .right-box {
+    border-bottom: 1px dashed black;
+}
+
+.middle-content.about-page .text {
+    /* background: purple; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* justify-content: center; */
+}
+
+.middle-content.about-page h2 {
+    padding: 12px 0px 0px 0px;
+}
+
+.middle-content.about-page p {
+    padding: 16px 0px 20px 0px ;
+}
+
+.middle-content.about-page .button {
+    /* background: green; */
+    width: 130px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-content.about-page {
+    /* background: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    justify-content: center;
+    padding: 20px 0px 0px 3px;
+}
+
+/* Stretch: */
+@keyframes jiggle {
+    0% {width: 12.5%;}
+    25% {width: 13%;}
+    50% {width: 12.5%;}
+    75% {width: 12%;}
+    100% {width: 12.5%;}
+}
+
+@keyframes dance {
+    0% {left: -5px; top: -5px}
+    25% {left: 5px; top: -5px}
+    50% {left: 5px; top: 5px}
+    75% {left: -5px; top: 5px}
+    100% {left: -5px; top: -5px}
+}
+
+#logo {
+    animation-name: dance;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    position: relative;
 }
